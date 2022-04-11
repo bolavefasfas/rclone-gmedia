@@ -5,13 +5,13 @@ After=network-online.target
 [Service]
 Type=notify
 ExecStart=/usr/bin/rclone mount \
-  --config=/home/<youruser>/.config/rclone/rclone.conf \
+  --config=/<youruser>/.config/rclone/rclone.conf \
   --log-level=INFO \
   --log-file=<rclone-log-dir>/rclone-mount.log \
   --user-agent=<useragent> \
   --umask=002 \
-  --gid=1002 \
-  --uid=1000 \
+  --gid=1001 \
+  --uid=1001 \
   --allow-other \
   --timeout=1h \
   --poll-interval=15s \
