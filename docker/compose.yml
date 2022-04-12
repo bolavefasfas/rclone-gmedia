@@ -138,7 +138,7 @@ services:
 volumes:
   portainer_data:
   
-  app:
+  npm:
     image: 'jc21/nginx-proxy-manager:latest'
     restart: unless-stopped
     ports:
